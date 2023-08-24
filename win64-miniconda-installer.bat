@@ -31,7 +31,7 @@ if /i "%correctHash%" == "%calcHash%" (
     echo Hashes Matched!
     echo.
     echo Installing Miniconda3 ...
-    @REM start /wait "" Miniconda3-latest-Windows-x86_64.exe /InstallationType=JustMe /RegisterPython=0 /S /D=%UserProfile%\Miniconda3
+    start /wait "" Miniconda3-latest-Windows-x86_64.exe /InstallationType=JustMe /RegisterPython=0 /S /D=%UserProfile%\Miniconda3
     echo Miniconda3 was successfully installed to %UserProfile%\Miniconda3!
 
     echo Removing Miniconda3-latest-Windows-x86_64.exe ...
